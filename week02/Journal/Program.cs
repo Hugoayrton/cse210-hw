@@ -1,9 +1,20 @@
-using System;
-
-class Program
+public class Job
 {
-    static void Main(string[] args)
+    private string _jobTitle;
+    private string _company;
+    private int _startYear;
+    private int _endYear;
+
+    public Job(string company, string jobTitle, int startYear, int endYear)
     {
-        Console.WriteLine("Hello World! This is the Journal Project.");
+        _company = company;
+        _jobTitle = jobTitle;
+        _startYear = startYear;
+        _endYear = endYear;
+    }
+
+    public void Display()
+    {
+        Console.WriteLine($"{_jobTitle} ({_company}) {_startYear}-{_endYear}");
     }
 }
