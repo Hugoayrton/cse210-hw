@@ -1,9 +1,29 @@
-using System;
-
-class Program
+public class Fraction
 {
-    static void Main(string[] args)
+    private int _top;
+    private int _bottom;
+
+    public Fraction()
     {
-        Console.WriteLine("Hello World! This is the Fractions Project.");
+        _top = 1;
+        _bottom = 1;
     }
+
+    public Fraction(int top)
+    {
+        _top = top;
+        _bottom = 1;
+    }
+
+    public Fraction(int top, int bottom)
+    {
+        _top = top;
+        _bottom = bottom;
+    }
+    
+
+
+
+
+    
 }
